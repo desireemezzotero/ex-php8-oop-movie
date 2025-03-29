@@ -1,13 +1,13 @@
 <?php 
 trait MovieImage {
-  private $image;
+  public $image;
 
-  public function setImage($_image) {
-    $this -> image = $_image;
+  public function setImage($image) {
+    $this->image = $image;
   }
 
-  public function ControllerImage($_image){
-    if($image){
+  public function ControllerImage(){
+    if($this->image){
       echo "immagine presente";
     } else {
       echo "inserire immagine";
