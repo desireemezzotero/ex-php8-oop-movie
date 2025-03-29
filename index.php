@@ -21,7 +21,7 @@ require_once "./db.php";
   </header>
 
   <main>
-   <div class="container m-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 ">
+   <div class="container m-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 ">
 
      <?php
     foreach($movies as $movie){
