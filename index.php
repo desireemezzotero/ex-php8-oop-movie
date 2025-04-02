@@ -44,6 +44,7 @@ require_once "./db.php";
              <span class="font-bold"> Durata:</span>
               <?php echo $movie->duration?>
              </p>
+
              
              <p class=" mt-1 text-gray-200 text-sm">
                 <span class="font-bold mt-1 text-gray-200 text-sm"> Genere: </span>
@@ -65,7 +66,7 @@ require_once "./db.php";
              </h6>
               <p class="text-gray-200 text-sm">
                <span class="font-bold"> Controllo immagine:</span>
-               <?php echo $movie->ControllerImage()?>
+               <?php echo $movie->ControllerImage($movie->image)?>
              </p>
 
              <p class="text-gray-200 text-sm">

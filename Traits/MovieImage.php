@@ -6,8 +6,8 @@ trait MovieImage {
     $this->image = $image;
   }
 
-  public function ControllerImage(){
-    if($this->image){
+  public function ControllerImage($image){
+    if($image){
       echo "immagine presente";
     } else {
       echo "inserire immagine";

@@ -76,10 +76,5 @@ $cenerentola = new Movie(
 
 $movies = [$coco,$aladin,$biancaneve,$cenerentola,$bella];
 
-/*  echo "<pre>";
- var_dump( $coco);
- var_dump( $aladin);
- echo "</pre>";
- */
 ?>
 
