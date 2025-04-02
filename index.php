@@ -27,7 +27,7 @@ require_once "./db.php";
     foreach($movies as $movie){
        ?>
        <div class="bg-gray-500 p-2 bg-opacity-30">
-         <div class="mt-2">
+           <div class="mt-2">
              <img src="<?php echo $movie->image ?>" alt=""/>
              <h6 class="mb-2 font-bold text-white text-center">
                <?php echo $movie->title?>
@@ -58,6 +58,21 @@ require_once "./db.php";
                 } while ($i < count($movie->genre));
                 echo $titles ?>
              </p>
+
+             <div>
+             <h6 class="mb-2 font-bold text-white text-center">
+               Metodi
+             </h6>
+              <p class="text-gray-200 text-sm">
+               <span class="font-bold"> Controllo immagine:</span>
+               <?php echo $movie->ControllerImage()?>
+             </p>
+
+             <p class="text-gray-200 text-sm">
+               <span class="font-bold"> Controllo Anno:</span>
+               <?php echo $movie->SetYear($movie->year)?>
+             </p>
+             </div>
             </div>
         </div>
       <?php  } ?>
